@@ -164,20 +164,20 @@ public class FilePickUtils implements LifeCycleCallBackManager {
 
     @TargetApi(Build.VERSION_CODES.M)
     private void requestPermissionForCameraButStorage() {
-        final String[] permissions = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE};
+        final String[] permissions = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE};
         requestPermissionWithRationale(permissions, CAMERA_BUT_STORAGE_PERMISSION, "Storage");
     }
 
     @TargetApi(Build.VERSION_CODES.M)
     private void requestPermissionForExternalStorage() {
-        final String[] permissions = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE};
+        final String[] permissions = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE};
         requestPermissionWithRationale(permissions, STORAGE_PERMISSION_IMAGE, "Storage");
     }
 
     @TargetApi(Build.VERSION_CODES.M)
     private void requestPermissionForCameraStorage() {
         final String[] permissions = new String[]{Manifest.permission.CAMERA,
-                Manifest.permission.READ_EXTERNAL_STORAGE};
+                Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE};
         requestPermissionWithRationale(permissions, STORAGE_PERMISSION_CAMERA, "Camera & Storage");
     }
 
