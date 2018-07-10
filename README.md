@@ -94,6 +94,3 @@ Add repository url and dependency in application module gradle file:
  ```
   
 
- <p align="end">
-  <img src="https://img.shields.io/badge/Android%20Arsenal-ImagePickerUtil-green.svg?style=flat" width="250"/>
-</p>
